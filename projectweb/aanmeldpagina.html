@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="topbar">
+       <img src="images/nslogo.svg" height="20" width="52" alt="Logo">
+    </header>
+    <main>
+    <form class="signin">
+       <legend>Registreren</legend>
+       <p>Vul de volgende gegevens in om uw NS-account aan te maken.</p>
+       <label for="naam">Voornaam</label>
+        <input type="text" name="naam" id="naam" required/>
+        <label for="Naam">Tussenvoegsel</label>
+        <input type="text" name="tussenvoegsel" id="tussenvoegsel"/>
+        <label for="Naam">Achternaam</label>
+        <input type="text" name="achternaam" id="achternaam"/>
+        
+        <h4>Inloggegevens</h4>
+        <label for="Naam">E-mailadres</label>
+        <input type="email" name="email" id="email" required/>
+        <label for="Naam">Bevestig e-mailadres</label>
+        <input type="email" name="email" id="email"/>
+        <label for="Naam">Wachtwoord</label>
+        <input type="password" name="wachtwoord" id="wachtwoord" required/>
+        <label for="Naam">Bevestig wachtwoord</label>
+        <input type="password" name="wachtwoord" id="wachtwoord"/>
+        
+        <h4>Gebruiksvoorwaarden</h4>
+         <section class="gebruiksvoorwaarden">
+        <div class="checkbox">
+          <input type="checkbox" name="gebruiksvoorwaarden">
+          <label>Ik ga akkoord met de gebruiksvoorwaarden.</label>
+          </section>
+        </div>
+        
+        <div class="knoppen">
+        <a href="#" class="annuleren">Annuleren</a>
+        <input type="submit" class="aanmaken" value="Aanmaken">
+        </div>
+        </form>
+    </main>
+</body>
+</html>

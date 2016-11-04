@@ -1,0 +1,445 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+il, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* yo end reset */
+
+@font-face{font-family:NS Sans;src:url(../fonts/nssans__-webfont.eot);src:url(../fonts/nssans__-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/nssans__-webfont.woff) format("woff"),url(../fonts/nssans__-webfont.ttf) format("truetype"),url(../fonts/nssans__-webfont.svg#ns_sansregular) format("svg");font-weight:400;font-style:normal}
+
+@font-face{font-family:Soulmission;src:url(../fonts/SoulMission.ttf);}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 3.75rem;
+    width: 100%;
+    min-width: 320px;
+    background-color: white;
+    position: fixed;
+    top:0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+header img {
+    padding: 0.5em 0.5em 0.5 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input[type=search] {
+    width: 0;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    background-image: url('projectweb/images/zoeken.svg');
+    background-repeat: no-repeat;
+    padding: 0 30px 0 20px;
+    height: 2em;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
+}
+
+input[type=search]:focus {
+    width: 100%;
+    border: 2px solid #ccc;
+}
+
+/*
+main div {
+    background: url(/images/Trein-HOOFDBEELD.jpg);
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+*/
+
+/* SLIDER */ 
+
+.recent {
+    background-image: url(/projectweb/images/trein.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 3em 0;
+}
+
+.recent article {
+    margin: 3.75em 0 1em 0;
+    padding: 2em;
+    color: white;
+    font-size: 0.9em;
+    background-color: rgba(0,48,130,.8);
+    
+}
+
+.recent article a { 
+    display: flex;
+    padding-top: 1em;
+    color: white;
+}
+
+.slide {
+    width: 100%;
+}
+
+
+/* FILTER */ 
+
+aside {
+    color: black;
+    font-size: 0.7em;
+    background-color: rgba(255,201,23,1);
+    color: rgba(0,48,130,.8);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: -1.5em;
+}
+
+.filter {
+    padding-left: 1em;
+}
+
+body {
+    font-family: NS Sans,Segoe UI,Myriad,Verdana,sans-serif;
+} 
+
+main {
+    font-family: NS Sans,Segoe UI,Myriad,Verdana,sans-serif;
+    width: 100%;
+    height: 500px;
+    padding-top: 3.75rem;
+}
+    
+body {
+    background-color: #E6E6E9;
+    
+}
+
+.artikelen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98vw;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* CONTENT */
+
+h1 {
+    font-size: 1.3em;
+}
+
+h1 + p {
+    padding-top: 0.5em;
+}
+
+h3 {
+   margin: 1em;
+   text-align: center;
+    font-size: 1.5em;
+}
+
+/* NAV */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+/* VERHALEN OP OVERZICHTSPAGINA -  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+i {
+    font-size: 2.5em !important;
+    color: rgb(70,70,70);
+}
+article ul{
+    width: 100%;
+    border-top: 1px solid rgb(150, 150, 150);
+    height: 4em;
+    position: relative;
+}
+article ul li{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+}
+article ul li a{
+    line-height: 3em;
+}
+article ul li:last-of-type{
+    left: 50%;
+    top: 0.3em;
+}
+article ul li a{
+    width: 100%;
+    height: 100%;
+}
+
+section h2{
+    display:inline-block;
+}
+.popular {
+    color: black;
+    font-size: 0.9em;
+    background-color: #fff;
+    width: 20em; 
+    height: 28em; 
+    box-shadow: 0 4px 2px -2px gray;
+    margin: 1em;
+    overflow: hidden;
+    line-height: 1.2em;
+}
+
+.popular h2 {
+    padding-top: 1em;
+    color: black;
+}
+
+.popular > a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.popular section:first-of-type img {
+    height: 9em;
+    width: 100%;
+}
+
+.popular section:last-of-type {   
+    padding: 1em 2em;
+}
+
+.popular {
+    background: rgba(255,255,255,1);
+    transition: background-color 1s;
+}
+
+article ul li:hover {
+    filter: brightness(0.8);
+    
+}
+
+.popular:before {
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+  content: ' ';
+}
+
+/* AANMELDPAGINA */
+
+.signin  {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1em 10em 1em; 
+    background-color: white;
+    margin: 0 auto;
+    color: rgba(0,48,130,.8);
+    max-width: 50%;
+    min-width: 20em;
+}
+
+legend {
+    font-size: 1.5em;
+    padding: 0.5em 1em 0.5em 0;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input[type='text'], input[type='email'], input[type='password'], input[type='search']{
+    width: 80%;
+    height: 4em;
+}
+input:focus{
+    box-shadow: 0 0 15px 5px rgba(31, 73, 125, 0.1);
+    outline: none;
+}
+
+.topbar {
+    background-color: white;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin: 2em 0 1.5em 0;
+}
+
+.gebruiksvoorwaarden {
+    display: flex;
+    flex-direction: row;
+}
+
+.signin p {
+    font-size: 1em;
+    padding-bottom: 2em;
+    color: black;
+}
+
+.annuleren {
+    color: 0079d3;
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 18px 10px 10px;
+    box-shadow: 0 -.125rem 0  inset;
+    -webkit-transition: box-shadow .15s ease-in-out;
+    transition: box-shadow .15s ease-in-out;
+    position: relative;
+    margin-top: 1.5em;
+    
+}
+
+.aanmaken {
+    color: #fff;
+    width: 50%;
+    background: #0079d3;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 18px 10px 10px;
+    position: relative;
+    margin-top: 1.5em;
+}
+
+/* PARANOIA VERHAAL */
+
+
+
+.knoppen {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* KINDERBOEK VERHAAL */
+.mobile{
+    width: 100%;
+}
+.desktop{
+    width:100%;
+    display: none;
+}
+.tablet{
+    width:100%;
+    display: none;
+}
+
+
+
+/* RESPONSIVE */
+@media(max-width: 20em) {
+/*
+    .recent article {
+        margin: 3.75em 10em; }
+*/
+
+    
+}
+
+
+@media(min-width: 32em) {
+    .recent article {
+        margin: 0em 3em; 
+        width:30em; }
+    }
+    .tablet{
+        display: inline;
+    }
+    .mobile{
+        display: none;  
+    }
+
+}
+
+@media(min-width: 63em) {
+    .desktop{
+        display: inline;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+@media(min-width: 78em) {
+    .artikelen {
+        max-width: 76em;
+    }
+    
+}
+
